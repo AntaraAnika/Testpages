@@ -152,10 +152,7 @@ span.fade2 {
 
 /* FOOTER */
 footer {
-    position: absolute;
-    z-index: 6;
-    bottom: 0;
-    background-color: #111111;
+    background-color: black;
     width: 100%;
     text-align: center;
     padding: 1rem;
