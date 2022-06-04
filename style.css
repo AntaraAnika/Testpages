@@ -55,7 +55,7 @@ nav .nav-links {
     justify-content: space-around;
     align-items: center;
     margin-left: auto;
-    padding-left: 1rem;
+    padding-right: 2rem;
 }
 
 nav .nav-links li a {
@@ -67,7 +67,7 @@ nav .nav-links li a {
 
 nav .nav-links li {
     padding: 4px 7px;
-
+    text-align: center;
 }
 
 nav .nav-links li:hover {
@@ -91,7 +91,7 @@ nav .nav-links li:hover {
     font-size: 3.5rem;
 }
 
-.header-overlay .header-content p {
+.header-overlay .header-content .heading-details {
     font-size: 20px;
     text-align: center;
 }
@@ -130,7 +130,7 @@ nav .nav-links li:hover {
 
 /* Section 2 */
 .diffrence-section {
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(23, 0, 26);
     padding: 5rem;
 }
 
@@ -153,6 +153,10 @@ span.fade2 {
 /* Section 3 */
 .potential {
     color: rgb(37, 37, 37);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* FOOTER */
@@ -169,6 +173,23 @@ footer p {
 
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
+
+    /* SECTION 1 BG IMAGE */
+    .header-section {
+        height: auto;
+    }
+
+    .header-overlay .header-content {
+        padding: 0;
+        margin: 2rem;
+    }
+
+    .header-overlay .header-content .heading-details {
+        text-align: justify;
+    }
+
+
+    /* NAVBAR */
     .hamburger .line {
         width: 30px;
         height: 3px;
@@ -194,7 +215,7 @@ footer p {
     /* Nav Ul Animation */
     nav .nav-links {
         position: fixed;
-        background-color: #5b78c7;
+        background-color: #291441;
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -202,6 +223,10 @@ footer p {
         -webkit-clip-path: circle(100px at 90% -11%);
         transition: all 1s ease-out;
         pointer-events: none;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding-top: 2rem;
     }
 
     /* For Animation Js Onclick */
@@ -209,10 +234,12 @@ footer p {
         clip-path: circle(100px at 90% -11%);
         -webkit-clip-path: circle(1000px at 90% -11%);
         pointer-events: all;
+        font-size: 20px;
+        padding: 0;
     }
 
     .nav-links li {
-        opacity: 0;
+        /* opacity: 0; */
     }
 
     .nav-links li a {
@@ -220,7 +247,7 @@ footer p {
     }
 
     /* li Item Animation */
-    .nav-links li:nth-child(1) {
+    /* .nav-links li:nth-child(1) {
         transition: all 0.5s ease 0.2s;
     }
 
@@ -234,5 +261,5 @@ footer p {
 
     li.fade {
         opacity: 1;
-    }
+    } */
 }
