@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -145,7 +145,7 @@ nav .nav-links li:hover {
 
 /* Section 2 */
 .diffrence-section {
-    background-color: rgb(23, 0, 26);
+    background-color: #17001a;
     padding: 5rem;
 }
 
@@ -165,14 +165,154 @@ span.fade2 {
     color: rgb(32, 32, 32);
 }
 
+/* Section 2 */
+
+
 /* Section 3 */
 .potential {
-    color: rgb(37, 37, 37);
+    color: #252525;
     height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* Section 3 */
+
+
+/* Section 4 */
+/* ABOUT US */
+.about {
+    /* padding-bottom: 8rem;
+    padding-top: 5rem; */
+    color: rgb(37, 37, 37);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem 0 0 0;
+    /* background-image: linear-gradient(white, #ffd4ff); */
+}
+
+.about .heading {
+    border-bottom: 3px solid #ff9ac9;
+}
+
+.about .heading h1 {
+    font-weight: 700;
+}
+
+.about .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: -webkit-fill-available;
+    width: -moz-available;
+
+}
+
+.about .about-content h3 {
+    font-size: 32px;
+}
+
+.about .about-content p {
+    font-size: 20px;
+}
+
+/* OFFICE EMPLOYEE CLIENT */
+.about .about-content .OEC {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-content .OEC .cards {
+    overflow: hidden;
+}
+
+.about .about-content .OEC .cards img {
+    height: 300px;
+    border-radius: 6px;
+}
+
+.about .about-content .OEC h1 {
+    font-weight: 700;
+    color: #a3004c;
+}
+
+.about .about-content .OEC p {
+    font-size: 18px;
+}
+
+/* Slider */
+.slick-next:before {
+    content: none !important;
+}
+
+/* Section 4 */
+
+
+/* Section 5 */
+.contact {
+
+    height: auto;
+    background-image: linear-gradient(#ffd4ff, #17001a);
+    background-image: url(/brecht-corbeel-5PZ0ASBTvCQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* Background Overlay */
+.contact .contact-overlay {
+    background-color: #140e14dc;
+    height: 100%;
+    width: 100%;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* FORM */
+.contact form .form-floating {
+    z-index: 1 !important;
+}
+
+.contact form input {
+    border-radius: 0 !important;
+}
+
+/* Form Btn */
+.contact form .form-btn {
+    width: min-content;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background-color: #3d0d3d;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 3px;
+    padding: 10px 30px;
+}
+
+input {
+    color: #5D5D5D !important;
+}
+
+form label {
+    color: #5D5D5D !important;
+}
+
+/* Section 5 */
+
+
 
 /* FOOTER */
 footer {
@@ -277,7 +417,28 @@ footer p {
         top: -2rem;
     }
 
+    /* SECTION 4 */
+    .about {
+        background-image: none;
+        height: auto;
+    }
 
+    .about .about-content .OEC .cards img {
+        height: auto;
+        width: auto;
+    }
+
+    /* SECTION 5 */
+    .contact-details .g-map iframe {
+
+        height: auto;
+        width: auto;
+    }
+
+    /* FORM */
+    .form-content form input {
+        width: auto !important;
+    }
 
     /* li Item Animation */
     /* .nav-links li:nth-child(1) {
