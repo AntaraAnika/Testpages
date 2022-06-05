@@ -14,9 +14,7 @@ body {
     color: white;
 }
 
-h1 {
-    /* font-size: 3.5rem; */
-}
+
 
 /* SECTION 1 */
 /* Header Section */
@@ -48,6 +46,10 @@ nav {
     width: 100%;
 }
 
+nav:hover {
+    background-color: #221036bd;
+}
+
 /* Normal View Nav */
 nav .nav-links {
     display: flex;
@@ -68,15 +70,25 @@ nav .nav-links li a {
     font-weight: 500;
 }
 
+nav .nav-links li a:hover {
+    font-size: 22px;
+}
+
 nav .nav-links li {
     padding: 4px 7px;
     text-align: center;
 }
 
 nav .nav-links li:hover {
-    background-color: #311847;
+    background-color: #0000006c;
+    border: 2px solid black;
+    border-radius: 3px;
     padding: 4px 7px;
-    font-size: 26px;
+    /* font-size: 26px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
 }
 
 
