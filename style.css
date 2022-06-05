@@ -258,6 +258,11 @@ footer p {
         padding: 2px 5px;
     }
 
+    /* SECTION 2 */
+    .diffrence-section {
+        position: relative;
+        top: -2rem;
+    }
 
 
 
