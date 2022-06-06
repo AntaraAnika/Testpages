@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 2px solid black; */
 }
 
 body {
@@ -71,7 +72,7 @@ nav .nav-links li a {
 }
 
 nav .nav-links li a:hover {
-    font-size: 22px;
+    transform: scale(1.1);
 }
 
 nav .nav-links li {
@@ -162,7 +163,7 @@ span.fade2 {
     margin: 1rem;
     padding: 1rem 1.5rem;
     border-radius: 6px;
-    color: rgb(32, 32, 32);
+    color: #202020;
 }
 
 /* Section 2 */
@@ -183,16 +184,16 @@ span.fade2 {
 /* Section 4 */
 /* ABOUT US */
 .about {
-    /* padding-bottom: 8rem;
-    padding-top: 5rem; */
+    padding-bottom: 4rem;
+    position: relative;
     color: rgb(37, 37, 37);
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
-    margin: 1rem 0 0 0;
+    /* padding: 1rem; */
+    /* margin: 1rem 0 0 0; */
     /* background-image: linear-gradient(white, #ffd4ff); */
 }
 
@@ -224,7 +225,7 @@ span.fade2 {
 
 /* OFFICE EMPLOYEE CLIENT */
 .about .about-content .OEC {
-    width: 100%;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
 }
@@ -257,12 +258,12 @@ span.fade2 {
 
 /* Section 5 */
 .contact {
-
+    position: relative;
     height: auto;
-    background-image: linear-gradient(#ffd4ff, #17001a);
     background-image: url(/brecht-corbeel-5PZ0ASBTvCQ-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
 
 }
 
@@ -279,7 +280,25 @@ span.fade2 {
     gap: 1rem;
 }
 
+/* CONTACT AND FORM */
+.contact .contact-and-form {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
 /* FORM */
+.form-content {
+    width: auto !important;
+    padding: 1rem !important;
+}
+
+.form-control {
+    width: 119%;
+}
+
+
 .contact form .form-floating {
     z-index: 1 !important;
 }
@@ -320,6 +339,8 @@ footer {
     width: 100%;
     text-align: center;
     padding: 1rem;
+    position: relative;
+    bottom: 0;
 }
 
 footer p {
@@ -344,6 +365,7 @@ footer p {
     /* SECTION 1 BG IMAGE */
     .header-section {
         height: auto;
+        width: auto;
     }
 
     .header-overlay .header-content {
@@ -429,15 +451,31 @@ footer p {
     }
 
     /* SECTION 5 */
-    .contact-details .g-map iframe {
-
+    .contact {
         height: auto;
         width: auto;
     }
 
+    .contact-details .g-map iframe {
+
+        height: auto !important;
+        width: auto !important;
+    }
+
     /* FORM */
     .form-content form input {
-        width: auto !important;
+        width: 100% !important;
+    }
+
+    /* CONTACT AND FORM */
+    .contact .contact-and-form {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .contact .contact-and-form .form-content {
+        margin-right: auto;
     }
 
     /* li Item Animation */
