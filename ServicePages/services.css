@@ -47,6 +47,10 @@ a {
     border: 2px solid #3f3d57;
 
 } */
+.row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
 
 .header .content-navigation .nav-style {
     font-size: 18px;
