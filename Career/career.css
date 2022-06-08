@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+}
+
+body {
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Playfair Display', serif;
+
+    color: #2c2c2c;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* Section Job Area */
+.job-area {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-area .jobs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    flex-direction: row;
+    width: 900px;
+}
+
+.job-area .jobs .job-details {
+    text-align: center;
+    width: 400px;
+}
+
+.job-area .jobs .job-details .view-btn {
+    width: min-content !important;
+    background-color: #00abee;
+    color: white !important;
+    margin-right: auto;
+    border: none;
+    outline: none;
+    padding: 10px 40px;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Section Job Area end*/
