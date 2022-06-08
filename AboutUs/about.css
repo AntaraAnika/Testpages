@@ -22,10 +22,10 @@ li {
     list-style: none;
 }
 
-/* .row {
-    margin: 0;
-    padding: 0;
-} */
+.row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
 
 /* test */
 
@@ -45,6 +45,11 @@ li {
     margin-top: 4rem;
 }
 
+.header .header-content .row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 .header .header-content .heading {
     width: max-content;
     border-bottom: 5px solid #2c2c2c;
@@ -60,12 +65,82 @@ li {
 .header .header-content .history p span {
     font-size: 2rem;
     font-weight: 600;
+    color: #2c2c2c;
+    /* font-family: sans-serif; */
 }
 
 .header .header-content .history p {
     font-size: 1.2rem;
-
+    /* color: #9000B7; */
 }
+
+/* Section Mission */
+.mission {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+/* Mission Heading */
+.mission .mission-heading {
+    text-align: center;
+    margin-top: 4rem;
+    width: max-content;
+    border-bottom: 5px solid #2c2c2c;
+    border-radius: 2px;
+    margin-bottom: 4rem;
+}
+
+.mission .mission-heading h3 {
+    font-weight: 700;
+}
+
+.mission .mission-content {
+    justify-content: center;
+    align-items: center;
+}
+
+.mission .mission-content .description p {
+    font-size: 1.5rem;
+}
+
+/* Section Mission end */
+
+
+/* Section Testimonial */
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #e8c6ff;
+    color: #2c2c2c;
+    min-height: 50vh;
+    /* width: 100%; */
+}
+
+/* Testimonial Heading */
+.testimonial .heading {
+    text-align: center;
+    /* margin-top: 2rem; */
+    width: max-content;
+    margin-bottom: 2rem;
+}
+
+.testimonial .heading h3 {
+    font-weight: 700;
+}
+
+.testimonial .description {
+    max-width: 900px;
+}
+
+/* Section Testimonial end*/
+
 
 /* Section Clients */
 .clients {
@@ -73,6 +148,8 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+    margin-top: 2rem;
 }
 
 /* Heading */
@@ -82,7 +159,7 @@ li {
     width: max-content;
     border-bottom: 5px solid #2c2c2c;
     border-radius: 2px;
-    margin-bottom: 4rem;
+    margin-bottom: 4.5rem;
 }
 
 .clients .client-heading h3 {
@@ -98,6 +175,8 @@ li {
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Section Clients end */
@@ -110,19 +189,20 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     margin-bottom: 1rem;
+    margin-top: 3rem;
 }
 
 .board-members .heading {
     /* display: flex; */
-    float: left;
+    text-align: center;
     margin-left: 3rem;
     margin-top: 4rem;
     width: max-content;
     border-bottom: 5px solid #2c2c2c;
     border-radius: 2px;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .board-members .heading h3 {
@@ -270,7 +350,7 @@ li {
     position: absolute;
     height: 5px;
     background: #b600ad;
-    width: 35px;
+    width: 70px;
     top: -0.75rem;
     border-radius: 3px;
 }
@@ -321,7 +401,7 @@ li {
     top: 0;
     left: 0;
     background: linear-gradient(#2196f3, #e91e63, #f0f);
-    clip-path: circle(20% at 10% 10%);
+    clip-path: circle(16% at 10% 10%);
 }
 
 .team-content {
@@ -423,8 +503,23 @@ li {
     object-fit: cover;
 }
 
+/* FOOTER */
+footer {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+}
+
 @media screen and (max-width: 1020px) {
-    .row {
+    .header .header-content .row {
         margin: 0 !important;
         padding: 0 !important;
     }
@@ -440,6 +535,10 @@ li {
 
     .team-content .cards .sci li {
         opacity: 1;
+    }
+
+    .testimonial .description {
+        max-width: 300px;
     }
 }
 
