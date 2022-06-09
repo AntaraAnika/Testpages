@@ -25,7 +25,7 @@ body {
     background-size: cover;
     /* position: relative; */
     /* z-index: 4; */
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -33,7 +33,7 @@ body {
     background-color: rgba(0, 0, 0, 0.651);
     /* position: relative; */
     /* z-index: 5; */
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -48,7 +48,7 @@ nav {
 }
 
 nav:hover {
-    background-color: #221036bd;
+    background-color: #dd8edd94;
 }
 
 /* Normal View Nav */
@@ -72,17 +72,17 @@ nav .nav-links li a {
 }
 
 nav .nav-links li a:hover {
-    transform: scale(1.1);
+    text-decoration: underline;
 }
 
 nav .nav-links li {
     padding: 4px 7px;
     text-align: center;
+    transition: 0.2s ease-in-out;
 }
 
 nav .nav-links li:hover {
-    background-color: #0000006c;
-    border: 2px solid black;
+    /* background-color: #0000006c; */
     border-radius: 3px;
     padding: 4px 7px;
     /* font-size: 26px; */
@@ -90,6 +90,7 @@ nav .nav-links li:hover {
     justify-content: center;
     align-items: center;
     height: 3rem;
+    transform: scale(1.1);
 }
 
 
@@ -99,8 +100,7 @@ nav .nav-links li:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 4rem;
-    padding: 4rem;
+    padding: 6rem;
 }
 
 .header-overlay .header-content h1 {
@@ -146,8 +146,11 @@ nav .nav-links li:hover {
 
 /* Section 2 */
 .diffrence-section {
-    background-color: #17001a;
     padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 span {
@@ -155,11 +158,13 @@ span {
 }
 
 span.fade2 {
-    color: #ddbafc;
+    color: #3b3b3b;
+    font-weight: bold;
 }
 
 .diffrence-section .dif-cards div {
-    background-color: #e7d8e2;
+    text-align: center;
+    background-color: #efefef;
     margin: 1rem;
     padding: 1rem 1.5rem;
     border-radius: 6px;
@@ -176,6 +181,29 @@ span.fade2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Service Button */
+.potential .buttons {
+    width: min-content !important;
+    background-color: #88009c;
+    color: white !important;
+    margin-right: auto;
+    border: none;
+    outline: none;
+    padding: 10px 11px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-decoration: none;
+
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+}
+
+.potential .buttons:hover {
+    box-shadow: 0 0 20px rgba(133, 0, 115, 0.6);
+    transform: scale(1.1);
 }
 
 /* Section 3 */
@@ -223,6 +251,13 @@ span.fade2 {
     font-size: 20px;
 }
 
+.about .about-content span a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: #ff6584;
+}
+
 /* OFFICE EMPLOYEE CLIENT */
 .about .about-content .OEC {
     overflow: hidden;
@@ -260,7 +295,7 @@ span.fade2 {
 .contact {
     position: relative;
     height: auto;
-    background-image: url(/brecht-corbeel-5PZ0ASBTvCQ-unsplash.jpg);
+    background-image: url(/jr-korpa-9XngoIpxcEo-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -278,6 +313,7 @@ span.fade2 {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    padding-bottom: 4rem;
 }
 
 /* CONTACT AND FORM */
@@ -313,7 +349,7 @@ span.fade2 {
     border: none;
     outline: none;
     text-decoration: none;
-    background-color: #3d0d3d;
+    background-color: #f7022b;
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 800;
@@ -403,14 +439,16 @@ footer p {
 
     /* Nav Ul Animation */
     nav .nav-links {
-        position: fixed;
+        position: relative;
         z-index: 6;
-        background-color: #291441;
+        background-color: #41143d;
+        /* background-image: linear-gradient(black, #41143d); */
         height: 100vh;
         width: 100%;
         flex-direction: column;
         clip-path: circle(100px at 90% -15%);
         -webkit-clip-path: circle(100px at 90% -15%);
+        -moz-clip-path: circle(100px at 90% -15%);
         transition: all 1s ease-out;
         pointer-events: none;
         justify-content: center;
@@ -421,8 +459,9 @@ footer p {
 
     /* For Animation Js Onclick */
     .nav-links.open {
-        clip-path: circle(100px at 90% -11%);
+        clip-path: circle(800px at 90% -11%);
         -webkit-clip-path: circle(1000px at 90% -11%);
+        -moz-clip-path: circle(1000px at 90% -11%);
         pointer-events: all;
         font-size: 20px;
         padding: 0;
@@ -431,7 +470,10 @@ footer p {
     .nav-links li {
         /* opacity: 0; */
         padding: 2px 5px;
+        font-size: 1rem;
     }
+
+
 
     /* SECTION 2 */
     .diffrence-section {
@@ -464,7 +506,7 @@ footer p {
 
     /* FORM */
     .form-content form input {
-        width: 100% !important;
+        width: 150% !important;
     }
 
     /* CONTACT AND FORM */
