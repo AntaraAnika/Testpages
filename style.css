@@ -442,7 +442,6 @@ footer p {
         position: relative;
         z-index: 6;
         background-color: #41143d;
-        /* background-image: linear-gradient(black, #41143d); */
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -455,6 +454,7 @@ footer p {
         align-items: center;
         gap: 2rem;
         padding-top: 2rem;
+        top: -100px;
     }
 
     /* For Animation Js Onclick */
@@ -506,7 +506,7 @@ footer p {
 
     /* FORM */
     .form-content form input {
-        width: 150% !important;
+        width: 130% !important;
     }
 
     /* CONTACT AND FORM */
