@@ -27,14 +27,59 @@ li {
     padding: 0 !important;
 }
 
+/* Section Header */
 
-/* Section Job Area */
-.job-area {
-    height: 100vh;
+
+/* Header Image */
+.header .header-img {
+    background-image: url(/Career/images/redd-5U_28ojjgms-unsplash.jpg);
+    width: 100%;
+    min-height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Header Image Overlay */
+.header .header-img .header-overlay {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #2213228a;
+    min-height: 60vh;
+    height: 100%;
+    width: 100%;
+}
+
+.header .header-img .header-overlay .heading {
+    text-align: center;
+    padding: 1rem;
+}
+
+.header .header-img .header-overlay .heading h1 {
+    font-weight: 700;
+}
+
+.header .header-img .header-overlay .heading h6 {
+    font-size: 1rem;
+}
+
+/* Section Header end */
+
+
+
+/* Section Job Area */
+.job-area {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #efefef;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
 }
 
 .job-area .jobs {
@@ -42,26 +87,59 @@ li {
     flex-wrap: wrap;
     gap: 4rem;
     flex-direction: row;
-    width: 900px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
 }
 
+/* JOB CARD */
 .job-area .jobs .job-details {
     text-align: center;
-    width: 400px;
+    max-width: 465px;
+    padding: 1rem;
+    border: 1px solid #eee;
 }
 
+.job-area .jobs .job-details:hover {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+
+.job-area .jobs .job-details .job-title h4 {
+    color: #cf202f;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* View Job Button */
 .job-area .jobs .job-details .view-btn {
     width: min-content !important;
-    background-color: #00abee;
     color: white !important;
     margin-right: auto;
     border: none;
     outline: none;
-    padding: 10px 40px;
-    font-size: 22px;
-    font-weight: 500;
+    padding: 10px 11px;
+    font-size: 18px;
+    font-weight: 600;
     border-radius: 5px;
     text-decoration: none;
 }
 
 /* Section Job Area end*/
+
+/* FOOTER */
+footer {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+}
