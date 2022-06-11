@@ -17,6 +17,69 @@ body {
 a {
     text-decoration: none;
 }
+.row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* Navbar */
+nav {
+    height: 10vh;
+    background-color: #000000a8;
+    position: absolute;
+    top: 0;
+    bottom: 4%;
+    /* z-index: 3; */
+    width: 100%;
+}
+
+nav:hover {
+    background-color: #3c0a26;
+}
+
+/* Normal View Nav */
+nav .nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 2rem;
+}
+
+nav .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav .nav-links li a:hover {
+    text-decoration: underline;
+}
+
+nav .nav-links li {
+    padding: 4px 7px;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+}
+
+nav .nav-links li:hover {
+    /* background-color: #0000006c; */
+    border-radius: 3px;
+    padding: 4px 7px;
+    /* font-size: 26px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    transform: scale(1.1);
+}
+/* Navbar */
 
 /* SECTION 1 */
 .header {
@@ -24,6 +87,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 8rem;
 }
 
 .header .heading {
@@ -100,9 +164,71 @@ footer p {
     color: white;
 }
 
-@media screen and (max-width: 1020px) {
-    .row {
-        margin: 0 !important;
-        padding: 0 !important;
+@media screen and (max-width: 1040px) {
+
+    /* NAVBAR */
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: #161623;
+        margin: 5px;
     }
+
+    /* Nav Position */
+    nav {
+        position: absolute;
+        top: 0;
+        background: transparent;
+    }
+
+    nav:hover{
+        background: transparent;
+    }
+
+    /* Nav Icon */
+    nav .hamburger {
+        cursor: pointer;
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 8;
+    }
+
+    /* Nav Ul Animation */
+    nav .nav-links {
+        position: relative;
+        z-index: 6;
+        background-color: #41143d;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -15%);
+        -webkit-clip-path: circle(100px at 90% -15%);
+        -moz-clip-path: circle(100px at 90% -15%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding-top: 2rem;
+        top: -100px;
+    }
+
+    /* For Animation Js Onclick */
+    .nav-links.open {
+        clip-path: circle(800px at 90% -11%);
+        -webkit-clip-path: circle(1000px at 90% -11%);
+        -moz-clip-path: circle(1000px at 90% -11%);
+        pointer-events: all;
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .nav-links li {
+        /* opacity: 0; */
+        padding: 2px 5px;
+        font-size: 1rem;
+    }
+/* NAVBAR */
 }

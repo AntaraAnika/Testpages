@@ -67,7 +67,7 @@ nav .nav-links {
 nav .nav-links li a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
 }
 
@@ -92,6 +92,7 @@ nav .nav-links li:hover {
     height: 3rem;
     transform: scale(1.1);
 }
+/* Navbar */
 
 
 /* Page Heading */
@@ -164,7 +165,7 @@ span.fade2 {
 
 .diffrence-section .dif-cards div {
     text-align: center;
-    background-color: #efefef;
+    background-color: #fef6faa7;
     margin: 1rem;
     padding: 1rem 1.5rem;
     border-radius: 6px;
@@ -472,7 +473,7 @@ footer p {
         padding: 2px 5px;
         font-size: 1rem;
     }
-
+/* NAVBAR */
 
 
     /* SECTION 2 */

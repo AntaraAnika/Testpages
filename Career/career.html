@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Animation -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -26,6 +23,29 @@
     <section class="header">
         <div class="header-img">
             <div class="header-overlay">
+
+                <!-- Navbar -->
+                <nav>
+
+                    <!-- Nav Icon -->
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+
+                    <!-- Nav Items -->
+                    <ul class="nav-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../AboutUs/about.html">About Us</a></li>
+                        <li><a href="../ServicePages/services.html">Research and Development</a></li>
+                        <li><a href="./career.html">Career</a></li>
+                        <li><a href="../index.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- Navbar -->
+
+                <!-- Heading -->
                 <div class="heading">
                     <h1>Join Our Team</h1>
                     <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque omnis atque exercitationem
@@ -53,14 +73,43 @@
                         sit facilis eligendi optio libero dolor! Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div>
-                    <a href="mailto:example@example.com" class="view-btn" style="background-color: #f1c40f;"
-                        data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">Job
-                        Details</a>
+                    <!-- Details Buton -->
+                    <a href="" class="view-btn" style="background-color: #f1c40f;" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalScrollable">Job Details</a>
 
-                    <!-- Modal -->
-                    <!-- Modal end -->
+                    <!-- Modal Job 1 Details -->
+                    <div class="modal fade" id="exampleModalScrollable" tabindex="-1"
+                        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalScrollableTitle">Job Details</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p style="text-align: start;">This is some placeholder content to show the scrolling
+                                        behavior for modals. We
+                                        use repeated line breaks to demonstrate how content can exceed minimum inner
+                                        height, thereby showing inner scrolling. When content becomes longer than the
+                                        prefedined max-height of modal, content will be cropped and scrollable within
+                                        the modal.</p>
+                                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                                    <div class="modal-footer" style="justify-content: center;">
+                                        <a href="mailto:example@example.com" class="view-btn"
+                                            style="background-color: #f1c40f;">Apply</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal Job 1 Details end -->
+
                 </div>
             </div>
+            <!-- Job 1 end -->
 
             <!-- Job 2 -->
             <div class="job-details">
@@ -74,10 +123,41 @@
                         sit facilis eligendi optio libero dolor!</p>
                 </div>
                 <div>
-                    <a href="mailto:example@example.com" class="view-btn" style="background-color: #2ecc71;">Job
+                    <a href="" class="view-btn" style="background-color: #2ecc71;" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalScrollable2">Job
                         Details</a>
                 </div>
             </div>
+
+            <!-- Modal Job 2 Details -->
+            <div class="modal fade" id="exampleModalScrollable2" tabindex="-1"
+                aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Job Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p style="text-align: start;">This is some placeholder content to show the scrolling
+                                behavior for modals. We
+                                use repeated line breaks to demonstrate how content can exceed minimum inner
+                                height, thereby showing inner scrolling. When content becomes longer than the
+                                prefedined max-height of modal, content will be cropped and scrollable within
+                                the modal.</p>
+                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                            <div class="modal-footer" style="justify-content: center;">
+                                <a href="mailto:example@example.com" class="view-btn"
+                                    style="background-color: #2ecc71;">Apply</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Job 2 Details end -->
+            <!-- Job 2 end -->
 
             <!-- Job 3 -->
             <div class="job-details">
@@ -90,11 +170,45 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque cumque, ullam ad nihil
                         sit facilis eligendi optio libero dolor!</p>
                 </div>
+
+                <!-- Details Button -->
                 <div>
-                    <a href="mailto:example@example.com" class="view-btn" style="background-color: #f1c40f;">Job
+                    <a href="" class="view-btn" style="background-color: #f1c40f;" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalScrollable3">Job
                         Details</a>
                 </div>
             </div>
+
+            <!-- Modal Job 3 Details -->
+            <div class="modal fade" id="exampleModalScrollable3" tabindex="-1"
+                aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Job Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p style="text-align: start;">This is some placeholder content to show the scrolling
+                                behavior for modals. We
+                                use repeated line breaks to demonstrate how content can exceed minimum inner
+                                height, thereby showing inner scrolling. When content becomes longer than the
+                                prefedined max-height of modal, content will be cropped and scrollable within
+                                the modal.</p>
+                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                            <div class="modal-footer" style="justify-content: center;">
+                                <a href="mailto:example@example.com" class="view-btn"
+                                    style="background-color: #f1c40f;">Apply</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Job 3 Details end -->
+            <!-- Job 3 end -->
+
 
             <!-- Job 4 -->
             <div class="job-details">
@@ -107,13 +221,44 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque cumque, ullam ad nihil
                         sit facilis eligendi optio libero dolor!</p>
                 </div>
+
+                <!-- Details Button -->
                 <div>
-                    <a href="mailto:example@example.com" class="view-btn" style="background-color: #2ecc71;">Job
+                    <a href="mailto:example@example.com" class="view-btn" style="background-color: #2ecc71;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModalScrollable4">Job
                         Details</a>
                 </div>
             </div>
 
+            <!-- Modal Job 4 Details -->
+            <div class="modal fade" id="exampleModalScrollable4" tabindex="-1"
+                aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Job Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p style="text-align: start;">This is some placeholder content to show the scrolling
+                                behavior for modals. We
+                                use repeated line breaks to demonstrate how content can exceed minimum inner
+                                height, thereby showing inner scrolling. When content becomes longer than the
+                                prefedined max-height of modal, content will be cropped and scrollable within
+                                the modal.</p>
+                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+                            <div class="modal-footer" style="justify-content: center;">
+                                <a href="mailto:example@example.com" class="view-btn"
+                                    style="background-color: #2ecc71;">Apply</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Job 4 Details end -->
+            <!-- Job 4 end -->
 
         </div>
     </section>
@@ -129,22 +274,13 @@
     </footer>
 
 
-    <script src="main.js"></script>
+    <script src="/main.js"></script>
 
     <!-- Bootsrap Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
-
-    <!-- Animation -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            offset: 300, // offset (in px) from the original trigger point
-            delay: 0, // values from 0 to 3000, with step 50ms
-            duration: 1000 // values from 0 to 3000, with step 50ms
-        });
     </script>
+
 </body>
 
 </html>
