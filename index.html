@@ -11,6 +11,9 @@
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -63,7 +66,7 @@
                 </div>
 
                 <div class="introducing mt-5 mb-0">
-                    <h6>Introducing</h6>
+                    <h4>Introducing</h4>
                 </div>
 
                 <!-- Typing Animation -->
@@ -102,28 +105,28 @@
 
         <div class="row dif-cards mt-5">
 
-            <div class="col">
+            <div class="col" data-aos="zoom-in" data-aos-once="true" data-aos-delay="50">
                 <i class="bi bi-exclude" style="font-size: 3rem; color: #449bff;"></i>
                 <h3 class="mb-4">We're specialized.</h3>
                 <p>We're not generalists, we only offer you what we do best: Branded assets, UI/UX design, full-stack
                     development, and conversion optimization.</p>
             </div>
 
-            <div class="col">
+            <div class="col" data-aos="zoom-in" data-aos-once="true" data-aos-delay="300">
                 <i class="bi bi-award-fill" style="font-size: 3rem; color: rgb(212, 216, 0);"></i>
                 <h3 class="mb-4">We focus on results.</h3>
                 <p>We care about the impact our work has on your business or organization—not how it looks in our
                     portfolio or in an award showcase.</p>
             </div>
 
-            <div class="col">
+            <div class="col" data-aos="zoom-in" data-aos-once="true" data-aos-once="true" data-aos-delay="600">
                 <i class="bi bi-lightning-charge-fill" style="font-size: 3rem; color: orangered;"></i>
                 <h3 class="mb-4">We're responsive.</h3>
                 <p>We limit the number of clients we take on each year to ensure each one has an outstanding customer
                     experience. Expect responses in hours—not days.</p>
             </div>
 
-            <div class="col">
+            <div class="col" data-aos="zoom-in" data-aos-once="true" data-aos-delay="1000">
                 <i class="bi bi-bar-chart-steps" style="font-size: 3rem; color: green;"></i>
                 <h3 class="mb-4">We go the extra mile.</h3>
                 <p>We view our engagements as relationships—not vendor agreements. In addition to what we produce, we
@@ -136,7 +139,7 @@
 
 
     <!-- SECTION 3 -->
-    <section class="potential mb-5 p-5" id="services">
+    <section class="potential mb-5 ps-5 pe-5" id="services">
         <div class="row m-0 p-0 justify-content-center align-items-center">
             <div class="col-lg pe-4">
                 <img class="img-fluid" src="/undraw_Solution_mindset_re_57bf.png" alt="">
@@ -371,6 +374,16 @@
                     }
                 }
             ]
+        });
+    </script>
+
+    <!-- Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1000 // values from 0 to 3000, with step 50ms
         });
     </script>
 </body>

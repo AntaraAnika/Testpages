@@ -42,7 +42,7 @@ li {
 /* Navbar */
 nav {
     height: 10vh;
-    background-color: #000000a8;
+    background-color: #141414;
     position: absolute;
     top: 0;
     /* z-index: 3; */
@@ -175,7 +175,7 @@ nav .nav-links li:hover {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: #e8c6ff;
+    background-color: #d597ff;
     color: #2c2c2c;
     min-height: 50vh;
     /* width: 100%; */
@@ -407,14 +407,24 @@ nav .nav-links li:hover {
     content: "";
     position: absolute;
     height: 5px;
-    background: #b600ad;
-    width: 70px;
+    background: #a7009e;
+    width: 10%;
     top: -0.75rem;
     border-radius: 3px;
+    transition: 1s;
 }
+
+/* .blog-card p:first-of-type:hover:before {
+    position: absolute;
+    width: 60%;
+} */
 
 .blog-card:hover .details {
     left: 0%;
+}
+
+.blog-card:hover p:first-of-type:before {
+    width: 60%;
 }
 
 
@@ -440,6 +450,7 @@ nav .nav-links li:hover {
 }
 
 /* Background style */
+/* Right Circle */
 .our-team::before {
     content: '';
     position: absolute;
@@ -451,6 +462,7 @@ nav .nav-links li:hover {
     clip-path: circle(30% at right 60%);
 }
 
+/* Left Circle */
 .our-team::after {
     content: '';
     position: absolute;
