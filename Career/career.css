@@ -64,17 +64,17 @@ nav {
 }
 
 nav:hover {
-    background-color: #dd8edd94;
+    background-color: #3c0a26;
 }
 
 /* Normal View Nav */
 nav .nav-links {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     list-style: none;
-    width: 50%;
+    width: 62%;
     height: 100%;
-    justify-content: space-around;
+    justify-content: end;
     align-items: center;
     margin-left: auto;
     padding-right: 2rem;
@@ -108,6 +108,7 @@ nav .nav-links li:hover {
     height: 3rem;
     transform: scale(1.1);
 }
+
 /* Navbar */
 
 
@@ -210,9 +211,9 @@ footer p {
         padding: 2px 5px;
     }
 
-    .nav-links li a {
+    /* .nav-links li a {
         font-size: 14px !important;
-    }
+    } */
 
 }
 
@@ -233,7 +234,7 @@ footer p {
         background: transparent;
     }
 
-    nav:hover{
+    nav:hover {
         background: transparent;
     }
 
@@ -282,5 +283,6 @@ footer p {
         padding: 2px 5px;
         font-size: 1rem;
     }
-/* NAVBAR */
+
+    /* NAVBAR */
 }
