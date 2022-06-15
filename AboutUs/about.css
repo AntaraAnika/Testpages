@@ -28,7 +28,6 @@ li {
 }
 
 /* test */
-
 /* test */
 
 /* SECTION 1 */
@@ -101,7 +100,7 @@ nav .nav-links li:hover {
 /* Header content */
 .header .header-content {
     text-align: left;
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
     margin-top: 4rem;
 }
 
@@ -122,19 +121,19 @@ nav .nav-links li:hover {
 .header .header-content .history p span {
     font-size: 2rem;
     font-weight: 600;
-    color: #2c2c2c;
+    color: #b100f7;
     /* font-family: sans-serif; */
 }
 
 .header .header-content .history p {
     font-size: 1.2rem;
     margin-top: 8rem;
+    text-align: justify;
     /* color: #9000B7; */
 }
 
 /* Section Mission */
 .mission {
-    margin: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,6 +162,7 @@ nav .nav-links li:hover {
 
 .mission .mission-content .description p {
     font-size: 1.5rem;
+    text-align: justify;
 }
 
 /* Section Mission end */
@@ -401,6 +401,7 @@ nav .nav-links li:hover {
     position: relative;
     margin: 1rem 0 0;
     font-size: 1rem;
+    text-align: justify;
 }
 
 .blog-card p:first-of-type {
