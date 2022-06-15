@@ -189,10 +189,14 @@ span.fade2 {
     align-items: center;
 }
 
+.potential .service-img img {
+    margin: 1rem;
+}
+
 /* Service Button */
 .potential .buttons {
     width: min-content !important;
-    background-color: #88009c;
+    background-color: #87009c;
     color: white !important;
     margin-right: auto;
     border: none;

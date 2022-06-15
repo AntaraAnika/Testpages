@@ -237,6 +237,11 @@ nav .nav-links li:hover {
     align-items: center;
 }
 
+.clients .client-logos div img {
+    width: 200px;
+
+}
+
 /* Section Clients end */
 
 
