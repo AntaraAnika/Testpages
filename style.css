@@ -183,8 +183,15 @@ span.fade2 {
 /* Section 3 */
 .potential {
     color: #252525;
-    height: 70vh;
+    min-height: 70vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.potential .service-img {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -223,6 +230,7 @@ span.fade2 {
 /* ABOUT US */
 .about {
     padding-bottom: 4rem;
+    margin-top: 2rem;
     position: relative;
     color: rgb(37, 37, 37);
     height: 100vh;
