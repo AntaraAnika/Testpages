@@ -192,12 +192,12 @@ span.fade2 {
 .potential .service-img {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
 .potential .service-img img {
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0rem;
 }
 
 /* Service Button */
@@ -502,6 +502,15 @@ footer p {
 
     .diffrence-section .dif-cards div {
         text-align: start;
+    }
+
+    /* Section 3 */
+    .potential .service-btn {
+        text-align: center;
+    }
+
+    .potential .service-img {
+        justify-content: center;
     }
 
     /* SECTION 4 */

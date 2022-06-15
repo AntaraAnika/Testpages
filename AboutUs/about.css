@@ -260,7 +260,6 @@ nav .nav-links li:hover {
 .board-members .heading {
     /* display: flex; */
     text-align: center;
-    margin-left: 3rem;
     margin-top: 4rem;
     width: max-content;
     border-bottom: 5px solid #2c2c2c;
