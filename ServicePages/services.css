@@ -152,6 +152,19 @@ nav .nav-links li:hover {
     text-align: justify;
 }
 
+/* Section 3 Contact */
+.contact-section .contact {
+    transition: 0.5s;
+}
+
+.contact-section .contact:hover {
+    transform: scale(1.1);
+}
+
+.contact-section .contact h4 {
+    text-decoration: underline;
+}
+
 /* FOOTER */
 footer {
     background-color: black;

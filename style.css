@@ -20,7 +20,7 @@ body {
 /* SECTION 1 */
 /* Header Section */
 .header-section {
-    background-image: url(/mohsen-samimi-JlOmY2njZxE-unsplash.jpg);
+    background-image: url(./index-images/mohsen-samimi-JlOmY2njZxE-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /* position: relative; */
@@ -320,7 +320,7 @@ span.fade2 {
 .contact {
     position: relative;
     height: auto;
-    background-image: url(/jr-korpa-9XngoIpxcEo-unsplash.jpg);
+    background-image: url(./index-images/jr-korpa-9XngoIpxcEo-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
