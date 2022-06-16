@@ -115,7 +115,7 @@ nav .nav-links li:hover {
 
 .header-overlay .header-content .heading-details {
     font-size: 20px;
-    text-align: center;
+    text-align: justify;
 }
 
 /* TYPING ANIMATION */
@@ -152,7 +152,7 @@ nav .nav-links li:hover {
 
 /* Section 2 */
 .diffrence-section {
-    padding: 5rem 5rem 0 5rem;
+    padding: 5rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,9 +172,13 @@ span.fade2 {
     text-align: center;
     background-color: #fef6faa7;
     margin: 1rem;
-    padding: 1rem 1.5rem;
+    padding: 1rem;
     border-radius: 6px;
     color: #202020;
+}
+
+.diffrence-section .dif-cards div p {
+    text-align: justify;
 }
 
 /* Section 2 */
@@ -267,6 +271,7 @@ span.fade2 {
 
 .about .about-content p {
     font-size: 20px;
+    text-align: justify;
 }
 
 .about .about-content span a {
@@ -498,7 +503,9 @@ footer p {
     .diffrence-section {
         position: relative;
         top: -2rem;
+        padding: 5rem 4rem 0 4rem;
     }
+
 
     .diffrence-section .dif-cards div {
         text-align: start;
@@ -541,6 +548,10 @@ footer p {
     .contact {
         height: auto;
         width: auto;
+    }
+
+    .contact .contact-details {
+        padding-left: 1rem;
     }
 
     .contact-details .g-map iframe {
