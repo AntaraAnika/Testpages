@@ -161,8 +161,9 @@ nav .nav-links li:hover {
     transform: scale(1.1);
 }
 
-.contact-section .contact h4 {
+.contact-section .contact h5 {
     text-decoration: underline;
+    font-weight: 700;
 }
 
 /* FOOTER */
