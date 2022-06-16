@@ -234,7 +234,7 @@ span.fade2 {
 /* ABOUT US */
 .about {
     padding-bottom: 4rem;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     position: relative;
     color: rgb(37, 37, 37);
     height: 100vh;
@@ -249,6 +249,7 @@ span.fade2 {
 
 .about .heading {
     border-bottom: 3px solid #ff9ac9;
+    margin-bottom: 1rem;
 }
 
 .about .heading h1 {
@@ -267,6 +268,7 @@ span.fade2 {
 
 .about .about-content h3 {
     font-size: 32px;
+    margin-bottom: 1rem;
 }
 
 .about .about-content p {
@@ -524,7 +526,7 @@ footer p {
     .about {
         background-image: none;
         height: auto;
-        padding-top: 2rem;
+        padding-top: 4rem;
     }
 
     .about .about-content h3 {
