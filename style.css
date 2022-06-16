@@ -271,7 +271,7 @@ span.fade2 {
     margin-bottom: 1rem;
 }
 
-.about .about-content p {
+.about .about-content>p {
     font-size: 20px;
     text-align: justify;
 }
