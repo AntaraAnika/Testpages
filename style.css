@@ -413,8 +413,16 @@ footer p {
 
 }
 
+@media screen and (max-width: 1600px) {
 
-@media screen and (max-width: 1040px) {
+    /* Section 3 */
+    .potential {
+        margin-bottom: 6rem;
+    }
+}
+
+
+@media screen and (max-width: 1080px) {
 
     /* SECTION 1 BG IMAGE */
     .header-section {
@@ -507,6 +515,10 @@ footer p {
     }
 
     /* Section 3 */
+    /* .potential {
+        margin-bottom: 7rem;
+    } */
+
     .potential .service-btn {
         text-align: center;
     }
